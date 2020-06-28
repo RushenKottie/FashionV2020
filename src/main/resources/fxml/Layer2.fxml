@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="anchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logics.Controller">
+
+    <ImageView fitHeight="800.0" fitWidth="1200.0" opacity="0.45">
+        <Image url="@../IMG/000044770003.jpg" />
+    </ImageView>
+   <Button id="restart" fx:id="gameReStart" contentDisplay="CENTER" layoutX="972.0" layoutY="40.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="60.0" prefWidth="180.0" style="-fx-background-color: #EBE6E0; -fx-border-color: #b7aa9f#b7aa9f; -fx-border-width: 2;" text="В начало" textAlignment="CENTER" textFill="#252525" textOverrun="LEADING_ELLIPSIS">
+      <font>
+         <Font name="Panton Light Caps" size="14.0" />
+      </font>
+   </Button>
+   <ImageView id="doll" fx:id="doll2" fitHeight="637.0" fitWidth="354.0" layoutX="509.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../IMG/doll.png" />
+      </image>
+   </ImageView>
+   <Text fx:id="message2" layoutX="749.0" layoutY="294.0" lineSpacing="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ваша героиня прекрасно подготовленная &#10;спортсменка-плавчиха.&#10;Ей предстоит проплыть большой .отрезок &#10;гибралтарского пролива и побороться&#10;за чемпионский титул.&#10;&#10;Какой наряд ей лучше выбрать?" textAlignment="CENTER">
+      <font>
+         <Font name="Panton Light Caps" size="16.0" />
+      </font>
+   </Text>
+   <Button id="finish" fx:id="finish" contentDisplay="CENTER" layoutX="972.0" layoutY="119.0" mnemonicParsing="false" onAction="#buttonClick" opacity="0.0" prefHeight="60.0" prefWidth="180.0" style="-fx-background-color: #EBE6E0; -fx-border-color: #b7aa9f#b7aa9f; -fx-border-width: 2;" text="Выйти из игры" textAlignment="CENTER" textFill="#252525" textOverrun="LEADING_ELLIPSIS">
+      <font>
+         <Font name="Panton Light Caps" size="14.0" />
+      </font>
+   </Button>
+   <ImageView id="swimsuit" fx:id="swimsuit" fitHeight="239.0" fitWidth="148.0" layoutX="31.0" layoutY="37.0" onMouseClicked="#chooseDress" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../IMG/swimwear.png" />
+      </image>
+   </ImageView>
+   <ImageView id="green_dress" fx:id="greenDress" fitHeight="246.0" fitWidth="195.0" layoutX="144.0" layoutY="289.0" onMouseClicked="#chooseDress" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../IMG/green_and_yellow.png" />
+      </image>
+   </ImageView>
+   <ImageView id="yellow_dress" fx:id="yellow_dress" fitHeight="246.0" fitWidth="215.0" layoutX="316.0" layoutY="521.0" onMouseClicked="#chooseDress" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../IMG/yellow_dress.png" />
+      </image>
+   </ImageView>
+   <ImageView fx:id="inswimsuit" fitHeight="632.0" fitWidth="333.0" layoutX="489.0" layoutY="75.0" opacity="0.0" pickOnBounds="true" preserveRatio="true" rotate="-3.0">
+      <image>
+         <Image url="@../IMG/doll_in_swimsuit.png" />
+      </image>
+   </ImageView>
+</AnchorPane>
